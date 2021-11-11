@@ -6,6 +6,7 @@ using GloboTicket.Web.Models.Api;
 using GloboTicket.Web.Models.View;
 using GloboTicket.Web.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace GloboTicket.Web.Controllers
 {
@@ -14,16 +15,20 @@ namespace GloboTicket.Web.Controllers
         private readonly IEventCatalogService eventCatalogService;
         private readonly IShoppingBasketService shoppingBasketService;
         private readonly Settings settings;
+        private readonly ILogger<EventCatalogController> _logger;
 
-        public EventCatalogController(IEventCatalogService eventCatalogService, IShoppingBasketService shoppingBasketService, Settings settings)
+        public EventCatalogController(IEventCatalogService eventCatalogService, IShoppingBasketService shoppingBasketService, Settings settings,
+            ILogger<EventCatalogController> logger)
         {
             this.eventCatalogService = eventCatalogService;
             this.shoppingBasketService = shoppingBasketService;
             this.settings = settings;
+            this._logger = logger;
         }
 
         public async Task<IActionResult> Index(Guid categoryId)
         {
+            _logger.LogInformation($"Index method called!!!");
             var currentBasketId = Request.Cookies.GetCurrentBasketId(settings);
 
             var getBasket = currentBasketId == Guid.Empty ? Task.FromResult<Basket>(null) :
