@@ -1,0 +1,18 @@
+2021-11-11 14:58:22.8845 Info Message Template Auto Format enabled
+2021-11-11 14:58:22.9078 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-11 14:58:22.9986 Info Adding target FileTarget(Name=alldata)
+2021-11-11 14:58:23.0638 Info Validating config: TargetNames=alldata, ConfigItems=21, FilePath=F:\Projects\ps-microservices-getting-started\GloboTicket\GloboTicket.Client\bin\Debug\netcoreapp3.1\nlog.config
+2021-11-11 15:23:48.4730 Info Message Template Auto Format enabled
+2021-11-11 15:23:48.5099 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-11 15:23:48.6308 Info Adding target FileTarget(Name=alldata)
+2021-11-11 15:23:48.7134 Info Validating config: TargetNames=alldata, ConfigItems=21, FilePath=F:\Projects\ps-microservices-getting-started\GloboTicket\GloboTicket.Client\bin\Debug\netcoreapp3.1\nlog.config
+2021-11-11 16:12:23.5724 Info Message Template Auto Format enabled
+2021-11-11 16:12:23.6120 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-11 16:12:23.7383 Info Adding target FileTarget(Name=alldata)
+2021-11-11 16:12:23.8653 Info Validating config: TargetNames=alldata, ConfigItems=21, FilePath=F:\Projects\ps-microservices-getting-started\GloboTicket\GloboTicket.Client\bin\Debug\netcoreapp3.1\nlog.config
+2021-11-11 16:16:10.3528 Info Message Template Auto Format enabled
+2021-11-11 16:16:10.3831 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-11 16:16:10.5291 Info Adding target FileTarget(Name=alldata)
+2021-11-11 16:16:10.5291 Info Adding target FileTarget(Name=allinOne)
+2021-11-11 16:16:10.6352 Info Validating config: TargetNames=allinOne, ConfigItems=40, FilePath=F:\Projects\ps-microservices-getting-started\GloboTicket\GloboTicket.Client\bin\Debug\netcoreapp3.1\nlog.config
+2021-11-11 16:16:10.6504 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: alldata
